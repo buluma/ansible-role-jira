@@ -62,5 +62,3 @@ jira_jvm_support_recommended_args: >-
 
 # Session timeout (in minutes).
 jira_session_timeout: "120"
-
-ip_from_ec2: "10.10.0.2"

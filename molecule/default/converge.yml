@@ -22,8 +22,5 @@
       ansible.builtin.include_role:
         name: openjdk
       tags: openjdk
-
-    - name: include role
-      ansible.builtin.include_role:
-        name: jira
-      tags: jira
+  roles:
+    - role: ansible-role-jenkins
