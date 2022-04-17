@@ -44,3 +44,5 @@ _jira_download:
     url: "http://product-downloads.atlassian.com/software/jira/downloads/atlassian-jira-core-8.21.0.tar.gz"
     dest: "/var/cache/ansible/9e40238e6d5386e54fbd29358818f6d659893a3a6145565ea7672d61b63adb4f/atlassian-jira-core-8.21.0.tar.gz"
     checksum: "9e40238e6d5386e54fbd29358818f6d659893a3a6145565ea7672d61b63adb4f"
+
+_ip_from_ec2: "10.10.0.2"
