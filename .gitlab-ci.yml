@@ -8,31 +8,7 @@ variables:
   DOCKER_HOST: "tcp://docker:2375"
   PY_COLORS: 1
 
-molecule:
-  script:
-    - image=${image} tag=${tag} molecule test
-  retry: 1
-  parallel:
-    matrix:
-      - image: "docker-ubuntu-systemd"
-        tag: "latest"
-      - image: "docker-ubuntu-systemd"
-        tag: "bionic"
-      - image: "docker-ubuntu-systemd"
-        tag: "focal"
-      - image: "enterpriselinux"
-        tag: "7"
-      - image: "enterpriselinux"
-        tag: "latest"
-      - image: "debian-systemd"
-        tag: "latest"
-      - image: "debian-systemd"
-        tag: "bookworm"
-      - image: "fedora-systemd"
-        tag: "34"
-      - image: "fedora-systemd"
-        tag: "latest"
-
+# TODO: Build molecule trigger to cleaer bug
 testing:
   script:
     - image=${image} tag=${tag} molecule test
