@@ -1,31 +1,16 @@
 # [jira](#jira)
 
-Ansible Role for Atlassian Jira Installation.
+Ansible Role for Atlassian Jira Installation
 
 |GitHub|GitLab|Quality|Downloads|Version|Issues|Pull Requests|
 |------|------|-------|---------|-------|------|-------------|
-|[![github](https://github.com/buluma/ansible-role-jira/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-jira/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-jira/badges/master/pipeline.svg)](https://gitlab.com/buluma/ansible-role-jira)|[![quality](https://img.shields.io/ansible/quality/)](https://galaxy.ansible.com/buluma/jira)|[![downloads](https://img.shields.io/ansible/role/d/)](https://galaxy.ansible.com/buluma/jira)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-jira.svg)](https://github.com/buluma/ansible-role-jira/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-jira.svg)](https://github.com/buluma/ansible-role-jira/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-jira.svg)](https://github.com/buluma/ansible-role-jira/pulls/)|
+|[![github](https://github.com/buluma/ansible-role-jira/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-jira/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-jira/badges/master/pipeline.svg)](https://gitlab.com/buluma/ansible-role-jira)|[![quality](https://img.shields.io/ansible/quality/58886)](https://galaxy.ansible.com/buluma/jira)|[![downloads](https://img.shields.io/ansible/role/d/58886)](https://galaxy.ansible.com/buluma/jira)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-jira.svg)](https://github.com/buluma/ansible-role-jira/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-jira.svg)](https://github.com/buluma/ansible-role-jira/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-jira.svg)](https://github.com/buluma/ansible-role-jira/pulls/)|
 
 ## [Example Playbook](#example-playbook)
 
 This example is taken from `molecule/default/converge.yml` and is tested on each push, pull request and release.
 ```yaml
 ---
-
-# (c) Wong Hoi Sing Edison <hswong3i@pantarei-design.com>
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
 - hosts: all
   remote_user: root
   become: true
@@ -34,31 +19,13 @@ This example is taken from `molecule/default/converge.yml` and is tested on each
       ansible.builtin.include_role:
         name: openjdk
       tags: openjdk
-
-    - name: include role
-      ansible.builtin.include_role:
-        name: jira
-      tags: jira
+  roles:
+    - role: buluma.jira
 ```
 
 The machine needs to be prepared. In CI this is done using `molecule/default/prepare.yml`:
 ```yaml
 ---
-
-# (c) Wong Hoi Sing Edison <hswong3i@pantarei-design.com>
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
 - hosts: all
   remote_user: root
   become: true
@@ -193,21 +160,6 @@ The machine needs to be prepared. In CI this is done using `molecule/default/pre
 The default values for the variables are set in `defaults/main.yml`:
 ```yaml
 ---
-
-# (c) Wong Hoi Sing Edison <hswong3i@pantarei-design.com>
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
 # PostgreSQL JDBC release.
 postgresql_jdbc_release: "42.3"
 
@@ -262,6 +214,13 @@ jira_session_timeout: "120"
 
 - pip packages listed in [requirements.txt](https://github.com/buluma/ansible-role-jira/blob/main/requirements.txt).
 
+## [Status of used roles](#status-of-requirements)
+
+The following roles are used to prepare a system. You can prepare your system in another way.
+
+| Requirement | GitHub | GitLab |
+|-------------|--------|--------|
+|[openjdk](https://galaxy.ansible.com/buluma/openjdk)|[![Build Status GitHub](https://github.com/buluma/openjdk/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/openjdk/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/openjdk/badges/master/pipeline.svg)](https://gitlab.com/buluma/openjdk)|
 
 ## [Context](#context)
 
