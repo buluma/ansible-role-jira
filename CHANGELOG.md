@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-jira/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-jira/compare/v0.1.0...HEAD)
+
+**Closed issues:**
+
+- redo gitlab molecule master [\#1](https://github.com/buluma/ansible-role-jira/issues/1)
+
 ## [v0.1.0](https://github.com/buluma/ansible-role-jira/tree/v0.1.0) (2022-04-17)
 
 [Full Changelog](https://github.com/buluma/ansible-role-jira/compare/0963b713331e979840764675f7c125aa4976df36...v0.1.0)
