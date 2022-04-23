@@ -1,8 +1,8 @@
 ---
 roles:
-  - role: buluma.bootstrap
-  - role: openjdk
-  # TODO: Check why mine is failing
+  - name: openjdk
+    src: https://github.com/alvistack/ansible-role-openjdk
+    version: develop
 
 collections:
   - name: operator_sdk.util
