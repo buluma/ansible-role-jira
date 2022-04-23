@@ -5,8 +5,8 @@
   tasks:
      - name: check if ports are open
        ansible.builtin.wait_for:
-        port: "{{ item }}"
-        timeout: 2
+         port: "{{ item }}"
+         timeout: 2
        loop:
          - "8080"
        changed_when: false
