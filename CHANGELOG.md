@@ -6,6 +6,7 @@
 
 **Closed issues:**
 
+- Check why mine is failing [\#3](https://github.com/buluma/ansible-role-jira/issues/3)
 - Build molecule trigger to cleaer bug [\#2](https://github.com/buluma/ansible-role-jira/issues/2)
 - redo gitlab molecule master [\#1](https://github.com/buluma/ansible-role-jira/issues/1)
 
