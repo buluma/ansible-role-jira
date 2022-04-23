@@ -3,18 +3,17 @@
   remote_user: root
   become: true
   tasks:
-    - name: check page
-      ansible.builtin.uri:
-        url: "http://localhost:8080"
-        status_code: "200"
-        timeout: "300"
-        return_content: true
-      async: "300"
-      poll: "10"
-      register: result
-      until: result.status == 200
-      retries: 30
+     - name: check if ports are open
+       ansible.builtin.wait_for:
+        port: "{{ item }}"
+        timeout: 2
+       loop:
+         - "8080"
 
-    - name: check result
-      ansible.builtin.fail:
-      when: "'jira' not in result.content"
+     - name: see if the sample page returns 200
+       ansible.builtin.uri:
+         url: "http://127.0.0.1:8080/"
+         return_content: yes
+       register: result
+       failed_when:
+         - "'jira' not in result.content"
