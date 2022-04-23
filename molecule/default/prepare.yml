@@ -6,7 +6,7 @@
 
   roles:
     - role: buluma.bootstrap
-    - role: buluma.openjdk
+    - role: openjdk
 
   tasks:
     - name: redhat | subscription-manager register

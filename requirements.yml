@@ -1,7 +1,8 @@
 ---
 roles:
   - role: buluma.bootstrap
-  - role: buluma.openjdk
+  - role: openjdk
+  # TODO: Check why mine is failing
 
 collections:
   - name: operator_sdk.util
