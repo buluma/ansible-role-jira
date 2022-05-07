@@ -10,6 +10,10 @@
 - Build molecule trigger to cleaer bug [\#2](https://github.com/buluma/ansible-role-jira/issues/2)
 - redo gitlab molecule master [\#1](https://github.com/buluma/ansible-role-jira/issues/1)
 
+**Merged pull requests:**
+
+- Bump buluma/gh-action-auto-merge-dependabot-updates from 1.0.4 to 1.0.5 [\#6](https://github.com/buluma/ansible-role-jira/pull/6) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [v0.1.0](https://github.com/buluma/ansible-role-jira/tree/v0.1.0) (2022-04-17)
 
 [Full Changelog](https://github.com/buluma/ansible-role-jira/compare/0963b713331e979840764675f7c125aa4976df36...v0.1.0)
