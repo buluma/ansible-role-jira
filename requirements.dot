@@ -1,0 +1,13 @@
+digraph PhiloDilemma {
+  label = "Michael Buluma" ;
+  overlap=false
+  {
+    "jira" [fillcolor=yellow style=filled penwidth=3]
+    "openjdk" [fillcolor=green style=filled]
+    "" [fillcolor=green style=filled]
+    "" [fillcolor=green style=filled]
+  }
+  "jira" -> "openjdk"
+  "jira" -> ""
+  "jira" -> ""
+}
