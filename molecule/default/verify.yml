@@ -3,7 +3,7 @@
   remote_user: root
   become: true
   tasks:
-     - name: check if ports are open
+     - name: Check if ports are open
        ansible.builtin.wait_for:
           port: "{{ item }}"
           timeout: 2
@@ -12,7 +12,7 @@
        changed_when: false
        failed_when: false
 
-     - name: see if the sample page returns 200
+     - name: See if the sample page returns 200
        ansible.builtin.uri:
           url: "http://127.0.0.1:8080/"
           return_content: yes

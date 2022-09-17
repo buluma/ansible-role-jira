@@ -5,5 +5,4 @@
   gather_facts: yes
 
   roles:
-    - role: openjdk
     - role: ansible-role-jira
