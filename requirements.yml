@@ -1,7 +1,6 @@
 ---
 roles:
-  - name: openjdk
-    version: develop
+  - name: alvistack.openjdk
 collections:
   - name: operator_sdk.util
     version: ">=0.0.0,<1.0.0"
