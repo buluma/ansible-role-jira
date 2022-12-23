@@ -6,6 +6,7 @@ exclude_paths:
   - ./molecule/default/prepare.yml
   - ./molecule/default/converge.yml
   - ./molecule/default/verify.yml
+  - ./molecule/default/cleanup.yml
   - ./molecule/default/collections.yml
   - ./.tox
   - ./.cache
