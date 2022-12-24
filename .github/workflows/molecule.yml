@@ -46,8 +46,6 @@ jobs:
             tag: "jammy"
           - image: "enterpriselinux"
             tag: "7"
-          - image: "enterpriselinux"
-            tag: "latest"
           - image: "debian-systemd"
             tag: "latest"
           - image: "debian-systemd"
