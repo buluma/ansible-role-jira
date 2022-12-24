@@ -15,3 +15,4 @@ warn_list:  # or 'skip_list' to silence them completely
   - experimental  # all rules tagged as experimental
   - fqcn[canonical]  # Use FQCN for builtin actions.
   - name[template]  # Rule for checking task and play names.
+  - fqcn[action]  # Use FQCN for builtin actions.
