@@ -14,6 +14,7 @@
 **Merged pull requests:**
 
 - Bump act10ns/slack from 1 to 2 [\#9](https://github.com/buluma/ansible-role-jira/pull/9) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump buluma/galaxy-action from 1.0.3 to 6.25.22 [\#7](https://github.com/buluma/ansible-role-jira/pull/7) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump buluma/gh-action-auto-merge-dependabot-updates from 1.0.4 to 1.0.5 [\#6](https://github.com/buluma/ansible-role-jira/pull/6) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [v0.1.0](https://github.com/buluma/ansible-role-jira/tree/v0.1.0) (2022-04-17)
