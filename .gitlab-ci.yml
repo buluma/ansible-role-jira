@@ -14,12 +14,10 @@ molecule:
     matrix:
       - image: "docker-ubuntu-systemd"
         tag: "bionic"
-      - image: "docker-ubuntu-systemd"
-        tag: "jammy"
       - image: "enterpriselinux"
         tag: "7"
       - image: "enterpriselinux"
-        tag: "latest"
+        tag: "8"
 
 testing:
   stage: test
