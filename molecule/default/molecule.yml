@@ -14,24 +14,15 @@ lint: |
 driver:
   name: docker
 platforms:
-  - name: "jira-${image:-docker-centos7-ansible}-${tag:-latest}${TOX_ENVNAME}"
-    image: "${namespace:-buluma}/${image:-docker-centos7-ansible}:${tag:-latest}"
-    exposed_ports:
-      - 80/tcp
-    published_ports:
-      - 0.0.0.0:8080:80/tcp
+  - name: "jira-${image:-fedora}-${tag:-latest}${TOX_ENVNAME}"
+    image: "${namespace:-buluma}/${image:-fedora}:${tag:-latest}"
     command: /sbin/init
     volumes:
-      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+      - /sys/fs/cgroup:/sys/fs/cgroup:rw
+    cgroupns_mode: host
     privileged: yes
     pre_build_image: yes
-    tty: true
-    environment:
-      container: docker
 provisioner:
   name: ansible
-  config_options:
-    defaults:
-      interpreter_python: auto_legacy_silent
 verifier:
   name: ansible
