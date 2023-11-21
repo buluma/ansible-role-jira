@@ -18,8 +18,6 @@ molecule:
         tag: "focal"
       - image: "docker-ubuntu-systemd"
         tag: "bionic"
-      - image: "docker-ubuntu-systemd"
-        tag: "lunar"
       - image: "enterpriselinux"
         tag: "7"
       - image: "enterpriselinux"

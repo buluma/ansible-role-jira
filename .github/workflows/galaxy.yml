@@ -13,11 +13,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: galaxy
-<<<<<<< HEAD
         # uses: buluma/galaxy-action@v6.25.22  # TODO: rebuild action
         uses: robertdebock/galaxy-action@1.2.1
-=======
-        uses: buluma/galaxy-action@v6.25.22
->>>>>>> 2a2fe1b20249a99dc1937b6b70922da40f6e7fa9
         with:
           galaxy_api_key: ${{ secrets.galaxy_api_key }}
