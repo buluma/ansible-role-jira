@@ -60,9 +60,11 @@ jobs:
           - image: "debian-systemd"
             tag: "bullseye"
           - image: "fedora-systemd"
-            tag: "37"
+            tag: "38"
           - image: "fedora-systemd"
             tag: "latest"
+          - image: "fedora-systemd"
+            tag: "rawhide"
     steps:
       - name: checkout
         uses: actions/checkout@v4
