@@ -1,5 +1,5 @@
 ---
-- name: Zypper install
+- name: suse | Zypper install
   vars:
     ansible_python_interpreter: "python3"
   ansible.builtin.zypper:

@@ -1,5 +1,6 @@
 ---
-- hosts: all
+- name: Clean
+  hosts: all
   remote_user: root
   become: true
   gather_facts: false
