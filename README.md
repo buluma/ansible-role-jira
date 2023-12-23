@@ -2,9 +2,9 @@
 
 Ansible Role for Atlassian Jira Installation
 
-|GitHub|GitLab|Downloads|Version|Issues|Pull Requests|
-|------|------|-------|-------|------|-------------|
-|[![github](https://github.com/buluma/ansible-role-jira/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-jira/actions/workflows/molecule.yml)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-jira/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-jira)|[![downloads](https://img.shields.io/ansible/role/d/4742)](https://galaxy.ansible.com/buluma/jira)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-jira.svg)](https://github.com/buluma/ansible-role-jira/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-jira.svg)](https://github.com/buluma/ansible-role-jira/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-jira.svg)](https://github.com/buluma/ansible-role-jira/pulls/)|
+|GitHub|Version|Issues|Pull Requests|
+|------|-------|------|-------------|
+|[![github](https://github.com/buluma/ansible-role-jira/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-jira/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-jira.svg)](https://github.com/buluma/ansible-role-jira/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-jira.svg)](https://github.com/buluma/ansible-role-jira/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-jira.svg)](https://github.com/buluma/ansible-role-jira/pulls/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -219,9 +219,9 @@ jira_session_timeout: "120"
 
 The following roles are used to prepare a system. You can prepare your system in another way.
 
-| Requirement | GitHub | GitLab |
+| Requirement | GitHub | Version |
 |-------------|--------|--------|
-|[alvistack.openjdk](https://galaxy.ansible.com/buluma/alvistack.openjdk)|[![Build Status GitHub](https://github.com/buluma/alvistack.openjdk/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/alvistack.openjdk/actions)|[![Build Status GitLab](https://gitlab.com/shadowwalker/alvistack.openjdk/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/alvistack.openjdk)|
+|[alvistack.openjdk](https://galaxy.ansible.com/buluma/alvistack.openjdk)|[![Build Status GitHub](https://github.com/buluma/alvistack.openjdk/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/alvistack.openjdk/actions)|[![Version](https://img.shields.io/github/release/buluma/alvistack.openjdk.svg)](https://github.com/shadowwalker/alvistack.openjdk)|
 
 ## [Context](#context)
 
@@ -262,7 +262,6 @@ If you find issues, please register them in [GitHub](https://github.com/buluma/a
 
 [Michael Buluma](https://buluma.github.io/)
 
-Please consider [sponsoring me](https://github.com/sponsors/buluma).
 
 ### [Special Thanks](#special-thanks)
 
