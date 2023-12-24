@@ -221,7 +221,7 @@ The following roles are used to prepare a system. You can prepare your system in
 
 | Requirement | GitHub | Version |
 |-------------|--------|--------|
-|[alvistack.openjdk](https://galaxy.ansible.com/buluma/alvistack.openjdk)|[![Build Status GitHub](https://github.com/buluma/alvistack.openjdk/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/alvistack.openjdk/actions)|[![Version](https://img.shields.io/github/release/buluma/alvistack.openjdk.svg)](https://github.com/shadowwalker/alvistack.openjdk)|
+|[alvistack.openjdk](https://galaxy.ansible.com/buluma/alvistack.openjdk)|[![Ansible Molecule](https://github.com/buluma/alvistack.openjdk/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/alvistack.openjdk/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/alvistack.openjdk.svg)](https://github.com/shadowwalker/alvistack.openjdk)|
 
 ## [Context](#context)
 
