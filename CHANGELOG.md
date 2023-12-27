@@ -2,7 +2,15 @@
 
 ## [Unreleased](https://github.com/buluma/ansible-role-jira/tree/HEAD)
 
-[Full Changelog](https://github.com/buluma/ansible-role-jira/compare/v0.1.0...HEAD)
+[Full Changelog](https://github.com/buluma/ansible-role-jira/compare/v0.1.1...HEAD)
+
+**Closed issues:**
+
+- Update buluma/todo-to-issue-action@v1.0.1 @buluma [\#14](https://github.com/buluma/ansible-role-jira/issues/14)
+
+## [v0.1.1](https://github.com/buluma/ansible-role-jira/tree/v0.1.1) (2023-12-25)
+
+[Full Changelog](https://github.com/buluma/ansible-role-jira/compare/v0.1.0...v0.1.1)
 
 **Closed issues:**
 
