@@ -1,13 +1,12 @@
 # Changelog
 
-## [Unreleased](https://github.com/buluma/ansible-role-jira/tree/HEAD)
+## [v0.3.0](https://github.com/buluma/ansible-role-jira/tree/v0.3.0) (2024-01-20)
 
-[Full Changelog](https://github.com/buluma/ansible-role-jira/compare/v0.2.0...HEAD)
+[Full Changelog](https://github.com/buluma/ansible-role-jira/compare/v0.2.0...v0.3.0)
 
 **Merged pull requests:**
 
 - Bump buluma/molecule-action from 6.0.0 to 6.0.1 [\#22](https://github.com/buluma/ansible-role-jira/pull/22) ([dependabot[bot]](https://github.com/apps/dependabot))
-- Bump act10ns/slack from 1 to 2 [\#9](https://github.com/buluma/ansible-role-jira/pull/9) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [v0.2.0](https://github.com/buluma/ansible-role-jira/tree/v0.2.0) (2024-01-02)
 
@@ -20,6 +19,7 @@
 **Merged pull requests:**
 
 - Bump actions/checkout from 3 to 4 [\#17](https://github.com/buluma/ansible-role-jira/pull/17) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump buluma/gh-action-auto-merge-dependabot-updates from 1.0.4 to 1.0.5 [\#6](https://github.com/buluma/ansible-role-jira/pull/6) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [v0.1.1](https://github.com/buluma/ansible-role-jira/tree/v0.1.1) (2023-12-25)
 
@@ -34,8 +34,8 @@
 
 **Merged pull requests:**
 
+- Bump act10ns/slack from 1 to 2 [\#9](https://github.com/buluma/ansible-role-jira/pull/9) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump buluma/galaxy-action from 1.0.3 to 6.25.22 [\#7](https://github.com/buluma/ansible-role-jira/pull/7) ([dependabot[bot]](https://github.com/apps/dependabot))
-- Bump buluma/gh-action-auto-merge-dependabot-updates from 1.0.4 to 1.0.5 [\#6](https://github.com/buluma/ansible-role-jira/pull/6) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [v0.1.0](https://github.com/buluma/ansible-role-jira/tree/v0.1.0) (2022-04-17)
 
