@@ -65,8 +65,6 @@ jobs:
             tag: "38"
           - image: "fedora-systemd"
             tag: "latest"
-          - image: "fedora-systemd"
-            tag: "rawhide"
     steps:
       - name: Checkout Role
         uses: actions/checkout@v4
