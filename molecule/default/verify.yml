@@ -15,7 +15,7 @@
      - name: See if the sample page returns 200
        ansible.builtin.uri:
           url: "http://127.0.0.1:8080/"
-          return_content: yes
+          return_content: true
        changed_when: false
        register: result
        failed_when: false
