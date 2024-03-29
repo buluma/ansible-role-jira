@@ -54,8 +54,6 @@ jobs:
             tag: "jammy"
           - image: "docker-molecule-images"
             tag: "lunar"
-          - image: "docker-molecule-images"
-            tag: "noble"
           - image: "enterpriselinux"
             tag: "8"
           - image: "enterpriselinux"
