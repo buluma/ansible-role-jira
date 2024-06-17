@@ -51,15 +51,13 @@ jobs:
           - image: "docker-molecule-images"
             tag: "focal"
           - image: "docker-molecule-images"
-            tag: "bionic"
-          - image: "docker-molecule-images"
             tag: "jammy"
           - image: "docker-molecule-images"
             tag: "lunar"
           - image: "docker-molecule-images"
             tag: "noble"
           - image: "enterpriselinux"
-            tag: "8"
+            tag: "7"
           - image: "enterpriselinux"
             tag: "8"
           - image: "docker-molecule-images"
@@ -78,7 +76,7 @@ jobs:
         with:
           path: "${{ github.repository }}"
       - name: Running Molecule Test
-        uses: buluma/molecule-action@v24.2.0
+        uses: buluma/molecule-action@v24.6.17
         with:
           image: ${{ matrix.config.image }}
           tag: ${{ matrix.config.tag }}
