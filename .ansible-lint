@@ -12,9 +12,5 @@ exclude_paths:
   - .github
   - requirements.yml
 
-skip_list:
-  - yaml[truthy]
-  - name[template]
-
 enable_list:
   - name[prefix]
