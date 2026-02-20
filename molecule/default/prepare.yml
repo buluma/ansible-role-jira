@@ -1,5 +1,6 @@
 ---
-- hosts: all
+- name: Prepare base environment
+  hosts: all
   remote_user: root
   become: true
   gather_facts: false
@@ -38,7 +39,8 @@
       changed_when: false
       failed_when: false
 
-- hosts: all
+- name: Prepare tasks
+  hosts: all
   remote_user: root
   become: true
   tasks:

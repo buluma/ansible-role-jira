@@ -15,7 +15,6 @@ on:
       - master
       - main
   workflow_dispatch:
-
 jobs:
   pre-commit:
     runs-on: ubuntu-latest
