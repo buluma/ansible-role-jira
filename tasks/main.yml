@@ -167,7 +167,7 @@
     - Jira | systemctl daemon-reload
     - Jira | systemctl restart jira.service
 
-- name: Patch web.xml in {{ jira_catalina }}/atlassian-jira/WEB-INF/web.xml
+- name: Patch web.xml in {{ jira_catalina ~ '/atlassian-jira/WEB-INF/web.xml' }}
   vars:
     ansible_python_interpreter: "python3"
   community.general.xml:
