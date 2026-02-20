@@ -25,7 +25,8 @@ The machine needs to be prepared. In CI this is done using [`molecule/default/pr
 
 ```yaml
 ---
-- hosts: all
+- name: Prepare base environment
+  hosts: all
   remote_user: root
   become: true
   gather_facts: false
@@ -64,7 +65,8 @@ The machine needs to be prepared. In CI this is done using [`molecule/default/pr
       changed_when: false
       failed_when: false
 
-- hosts: all
+- name: Prepare tasks
+  hosts: all
   remote_user: root
   become: true
   tasks:
@@ -199,7 +201,6 @@ jira_catalina_connector_proxyport:
 jira_catalina_connector_scheme: "http"
 jira_catalina_connector_secure: "false"
 jira_catalina_context_path:
-
 # Atlassian Support recommended JVM arguments.
 jira_jvm_support_recommended_args: >-
   -Datlassian.plugins.enable.wait=300
