@@ -170,7 +170,7 @@
 - name: Patch {{ jira_catalina }}/atlassian-jira/WEB-INF/web.xml
   vars:
     ansible_python_interpreter: "python3"
-  xml:
+  community.general.xml:
     path: "{{ jira_catalina }}/atlassian-jira/WEB-INF/web.xml"
     xpath: "/ns:web-app/ns:session-config/ns:session-timeout"
     namespaces:
