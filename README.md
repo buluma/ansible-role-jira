@@ -194,11 +194,11 @@ jira_jvm_minimum_memory: "2048m"
 jira_jvm_maximum_memory: "2048m"
 
 # Proxy and context path setup.
-jira_catalina_connector_proxyname: ~
-jira_catalina_connector_proxyport: ~
+jira_catalina_connector_proxyname:
+jira_catalina_connector_proxyport:
 jira_catalina_connector_scheme: "http"
 jira_catalina_connector_secure: "false"
-jira_catalina_context_path: ~
+jira_catalina_context_path:
 
 # Atlassian Support recommended JVM arguments.
 jira_jvm_support_recommended_args: >-
