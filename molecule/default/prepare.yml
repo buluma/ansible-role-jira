@@ -79,7 +79,7 @@
       ansible.builtin.raw: |
         set -eu
         DEBIAN_FRONTEND=noninteractive apt-get install -y bzip2 ca-certificates curl gcc gnupg gzip iproute2 passwd procps python3 python3-apt python3-jmespath python3-lxml python3-pip python3-setuptools python3-venv python3-virtualenv python3-wheel rsync sudo tar unzip util-linux xz-utils zip
-      when: ansible_facts.os_family | lower == "debian"
+      when: ansible_facts['os_family'] | lower == "debian"
       changed_when: false
       failed_when: false
 
@@ -87,7 +87,7 @@
       ansible.builtin.raw: |
         set -eu
         yum install -y bzip2 ca-certificates curl gcc gnupg2 gzip iproute procps-ng python3 python3-dnf-plugin-versionlock python3-jmespath python3-libselinux python3-lxml python3-pip python3-setuptools python3-virtualenv python3-wheel rsync shadow-utils sudo tar unzip util-linux xz yum-utils zip
-      when: ansible_facts.distribution | lower == "fedora"
+      when: ansible_facts['distribution'] | lower == "fedora"
       changed_when: false
       failed_when: false
 
@@ -97,8 +97,8 @@
         yum-config-manager --enable crb || echo $?
         yum install -y http://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
         yum install -y bzip2 ca-certificates curl gcc gnupg2 gzip iproute procps-ng python3 python3-dnf-plugin-versionlock python3-jmespath python3-libselinux python3-lxml python3-pip python3-setuptools python3-virtualenv python3-wheel rsync shadow-utils sudo tar unzip util-linux xz yum-utils zip
-      when: ansible_facts.os_family | lower == "redhat" and
-        ansible_facts.distribution_major_version | lower == "9"
+      when: ansible_facts['os_family'] | lower == "redhat" and
+        ansible_facts['distribution_major_version'] | lower == "9"
       changed_when: false
       failed_when: false
 
@@ -107,8 +107,8 @@
         set -eu
         yum install -y http://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
         yum install -y bzip2 ca-certificates curl gcc gnupg2 gzip iproute procps-ng python3 python3-dnf-plugin-versionlock python3-jmespath python3-libselinux python3-lxml python3-pip python3-setuptools python3-virtualenv python3-wheel rsync shadow-utils sudo tar unzip util-linux xz yum-utils zip
-      when: ansible_facts.os_family | lower == "redhat" and
-        ansible_facts.distribution_major_version | lower == "8"
+      when: ansible_facts['os_family'] | lower == "redhat" and
+        ansible_facts['distribution_major_version'] | lower == "8"
       changed_when: false
       failed_when: false
 
@@ -118,8 +118,8 @@
         subscription-manager repos --enable=rhel-7-server-optional-rpms || echo $?
         yum install -y http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
         yum install -y bzip2 ca-certificates curl gcc gnupg2 gzip iproute procps-ng python3 python3-jmespath python3-libselinux python3-lxml python3-pip python3-setuptools python3-virtualenv python3-wheel rsync shadow-utils sudo tar unzip util-linux xz yum-plugin-versionlock yum-utils zip
-      when: ansible_facts.os_family | lower == "redhat" and
-        ansible_facts.distribution_major_version | lower == "7"
+      when: ansible_facts['os_family'] | lower == "redhat" and
+        ansible_facts['distribution_major_version'] | lower == "7"
       changed_when: false
       failed_when: false
 
@@ -127,6 +127,6 @@
       ansible.builtin.raw: |
         set -eu
         zypper -n install -y bzip2 ca-certificates curl gcc gpg2 gzip iproute2 procps python3 python3-jmespath python3-lxml python3-pip python3-setuptools python3-virtualenv python3-wheel rsync shadow sudo tar unzip util-linux xz zip
-      when: ansible_facts.os_family | lower == "suse"
+      when: ansible_facts['os_family'] | lower == "suse"
       changed_when: false
       failed_when: false
