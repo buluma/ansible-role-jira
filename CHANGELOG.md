@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-jira/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-jira/compare/v26.6.0...HEAD)
+
+**Closed issues:**
+
+- Add standard converge [\#4](https://github.com/buluma/ansible-role-jira/issues/4)
+
 ## [v26.6.0](https://github.com/buluma/ansible-role-jira/tree/v26.6.0) (2026-06-14)
 
 [Full Changelog](https://github.com/buluma/ansible-role-jira/compare/v24.3.31...v26.6.0)
