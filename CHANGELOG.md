@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased](https://github.com/buluma/ansible-role-jira/tree/HEAD)
+## [v26.6.1](https://github.com/buluma/ansible-role-jira/tree/v26.6.1) (2026-06-14)
 
-[Full Changelog](https://github.com/buluma/ansible-role-jira/compare/v26.6.0...HEAD)
+[Full Changelog](https://github.com/buluma/ansible-role-jira/compare/v26.6.0...v26.6.1)
 
 **Closed issues:**
 
