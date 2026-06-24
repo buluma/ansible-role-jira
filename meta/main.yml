@@ -20,6 +20,9 @@ galaxy_info:
     - name: Fedora
       versions:
         - all
+    - name: Suse
+      versions:
+        - all
   galaxy_tags:
     - system
 dependencies: []
