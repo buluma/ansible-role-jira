@@ -40,6 +40,7 @@
 **Merged pull requests:**
 
 - Bump buluma/molecule-action from 6.0.0 to 6.0.1 [\#22](https://github.com/buluma/ansible-role-jira/pull/22) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump actions/checkout from 3 to 4 [\#17](https://github.com/buluma/ansible-role-jira/pull/17) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [v0.2.0](https://github.com/buluma/ansible-role-jira/tree/v0.2.0) (2024-01-02)
 
@@ -48,10 +49,6 @@
 **Closed issues:**
 
 - Update buluma/todo-to-issue-action@v1.0.1 @buluma [\#14](https://github.com/buluma/ansible-role-jira/issues/14)
-
-**Merged pull requests:**
-
-- Bump actions/checkout from 3 to 4 [\#17](https://github.com/buluma/ansible-role-jira/pull/17) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [v0.1.1](https://github.com/buluma/ansible-role-jira/tree/v0.1.1) (2023-12-25)
 
