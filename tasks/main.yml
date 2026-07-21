@@ -84,7 +84,7 @@
     TMP_DIR="$(mktemp -d)" \
       && cd $TMP_DIR \
       && mkdir -p .{{ item.dest | dirname }} \
-      && curl -skL -m 300 {{ item.url }} > .{{ item.dest }} \
+      && curl -skL -m 1800 {{ item.url }} > .{{ item.dest }} \
       && echo -n "{{ item.checksum }} .{{ item.dest }}" | sha256sum -c - \
       && mkdir -p {{ item.dest | dirname }} \
       && mv .{{ item.dest }} {{ item.dest }} \
