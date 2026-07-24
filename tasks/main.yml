@@ -91,7 +91,12 @@
       && rm -rf $TMP_DIR
   args:
     executable: "/bin/bash"
-    creates: "/var/log/ansible/{{ item.checksum }}-get_url.log"
+    # item.dest, not the log file: the log is created by the exec/tee
+    # redirection at the very start of the script, before curl even runs,
+    # so a failed first attempt still leaves it behind. On retry, `creates`
+    # would then skip the script entirely - falsely reporting success
+    # while item.dest was never actually downloaded.
+    creates: "{{ item.dest }}"
   loop:
     - "{{ jira_download }}"
     - "{{ postgresql_jdbc_download }}"
