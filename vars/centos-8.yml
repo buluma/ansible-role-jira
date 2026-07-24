@@ -1,3 +1,4 @@
 ---
 _yum:
   - { state: "latest", name: "fontconfig" }
+  - { state: "present", name: "curl" }
