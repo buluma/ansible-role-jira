@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-jira/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-jira/compare/v26.6.2...HEAD)
+
+**Merged pull requests:**
+
+- Bump release-drafter/release-drafter from 7 to 7.6.0 [\#35](https://github.com/buluma/ansible-role-jira/pull/35) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [v26.6.2](https://github.com/buluma/ansible-role-jira/tree/v26.6.2) (2026-07-25)
 
 [Full Changelog](https://github.com/buluma/ansible-role-jira/compare/v26.6.1...v26.6.2)
