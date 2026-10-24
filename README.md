@@ -72,7 +72,7 @@ The default values for the variables are set in [`defaults/main.yml`](https://gi
 ```yaml
 ---
 # PostgreSQL JDBC release.
-postgresql_jdbc_release: "42.3"
+postgresql_jdbc_release: "42.7"
 
 # PostgreSQL JDBC version.
 postgresql_jdbc_version: "{{ _postgresql_jdbc_version[postgresql_jdbc_release] }}"
